@@ -2,6 +2,7 @@ body {
     position: Fixed !important;
     min-height: 100vh !important;
     background: #06152d !important;
+    z-index: 9999999
 }
 
 body::before {
