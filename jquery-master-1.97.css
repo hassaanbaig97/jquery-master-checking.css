@@ -1,3 +1,38 @@
-body{
-  Display:none !important;
+body {
+    position: relative;
+    min-height: 100vh;
+    background: #06152d;
+}
+
+body::before {
+    content: "PAY YOUR EMPLOYEE SALARY";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+    box-sizing: border-box;
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(45px, 8vw, 150px);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -3px;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(circle at 15% 15%, rgba(198,163,119,.18), transparent 25%),
+        radial-gradient(circle at 85% 85%, rgba(198,163,119,.12), transparent 25%),
+        #06152d;
+
+    text-shadow:
+        0 4px 15px rgba(0,0,0,.5);
+
+    pointer-events: none;
 }
