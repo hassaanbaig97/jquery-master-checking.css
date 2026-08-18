@@ -1,7 +1,5 @@
 body {
-    position: fixed;
-    min-height: 100vh;
-    background: #06152d;
+   display: none !important;
 }
 
 body::before {
